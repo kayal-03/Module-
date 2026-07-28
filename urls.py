@@ -15,6 +15,7 @@ router.register("predictions", views.PerformancePredictionViewSet)
 
 urlpatterns = [
     path("", views.dashboard, name="dashboard"),
+    path("api/dashboard/", views.dashboard, name="api-dashboard"),
     path("api/register/", views.register, name="api-register"),
     path("api/login/", views.login, name="api-login"),
     path("api/token/", TokenObtainPairView.as_view(), name="token-obtain-pair"),
